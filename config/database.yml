@@ -28,7 +28,7 @@ test:
   database: jl-0432-jie_test
   pool: 5
   username: root
-  password:
+  password:"11111"
   host: localhost
 
 production:
