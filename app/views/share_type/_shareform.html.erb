@@ -1,0 +1,22 @@
+<%= form_for(@ShareType) do |f| %>
+    <% if @ShareType.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@ShareType.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+          <ul>
+            <% @ShareType.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :type_name %><br />
+      <%= f.text_field :type_name %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

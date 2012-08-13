@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: jl-0432-jie_development
+  database: 0432jie
   pool: 5
-  username: root
-  password:
+  username: 0432jie
+  password: "jl0432jie"
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -25,18 +25,18 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: jl-0432-jie_test
+  database: 0432jie
   pool: 5
-  username: root
-  password:"11111"
+  username: 0432jie
+  password: "jl0432jie"
   host: localhost
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: jl-0432-jie_production
+  database: 0432jie
   pool: 5
-  username: root
-  password:
+  username: 0432jie
+  password: "jl0432jie"
   host: localhost
