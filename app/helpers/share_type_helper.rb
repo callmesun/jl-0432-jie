@@ -1,0 +1,2 @@
+module ShareTypeHelper
+end
