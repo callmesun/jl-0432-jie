@@ -3,11 +3,11 @@ class ShareTypesController < ApplicationController
     @ShareType = ShareType.new(params[:ShareType])
     respond_to do |format|
       if @ShareType.save
-        format.html { redirect_to @ShareType, notice: 'shareType was successfully created.' }
-        format.json { render json: @ShareType, status: :created, location: @ShareType }
+        format.html { redirect_to @ShareType, notice:'shareType was successfully created.' }
+        format.json { render json:@ShareType, status::created, location:@ShareType }
       else
-        format.html { render action: "new" }
-        format.json { render json: @ShareType.errors, status: :unprocessable_entity }
+        format.html { render action:"new" }
+        format.json { render json:@ShareType.errors, status::unprocessable_entity }
       end
     end
   end
@@ -17,7 +17,7 @@ class ShareTypesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @ShareType }
+      format.json { render json:@ShareType }
     end
   end
 
